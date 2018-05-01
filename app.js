@@ -32,7 +32,7 @@ document.getElementById('form-group').addEventListener('submit', function(e) {
   document.getElementById('surname').value = '';
   //form.reset();
 
-  console.log(createCard);
+  console.log(card);
   console.log(person);
   console.log(person.addNames());
 
@@ -41,4 +41,16 @@ document.getElementById('form-group').addEventListener('submit', function(e) {
 
 // ........................
 
+// Print date
 
+const newElement = document.createElement('card');
+newElement.className = 'card';
+
+newElement.appendChild(document.createTextNode('Hi and something else goes here'));
+
+const placeholder = document.getElementById('placeholder');
+placeholder.appendChild(newElement);
+
+
+
+console.log(newElement);
