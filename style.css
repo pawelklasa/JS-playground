@@ -5,3 +5,7 @@
 .name {
   margin-top: 20px;
 }
+
+.alert-success {
+  display: none;
+}

@@ -32,12 +32,24 @@ document.getElementById('form-group').addEventListener('submit', function(e) {
   document.getElementById('surname').value = '';
   //form.reset();
 
+  // Show alert
+  const alert = document.getElementById('success');
+  alert.style.display = 'block';
+  
+  
+
   console.log(card);
   console.log(person);
   console.log(person.addNames());
 
   e.preventDefault();
 });
+
+// Close notification
+document.getElementById('close').addEventListener('click', function() {
+  const alert = document.getElementById('success');
+  alert.style.display = 'none';
+})
 
 // ........................
 
@@ -51,6 +63,3 @@ newElement.appendChild(document.createTextNode('Hi and something else goes here'
 const placeholder = document.getElementById('placeholder');
 placeholder.appendChild(newElement);
 
-
-
-console.log(newElement);
