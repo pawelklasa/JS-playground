@@ -6,7 +6,7 @@ function Person(firstName, secondName) {
 
 // Person prototype/method
 Person.prototype.addNames = function() {
-  return `Welcome ${this.firstName} ${this.secondName}`;
+  return `Welcome ${this.firstName} ${this.secondName}!`;
 }
 
 // UI
@@ -14,6 +14,7 @@ document.getElementById('form-group').addEventListener('submit', function(e) {
   const firstName = document.getElementById('name').value,
         secondName = document.getElementById('surname').value;
         
+  // Create a person      
   const person = new Person(firstName, secondName);
 
   // Create element
@@ -29,6 +30,7 @@ document.getElementById('form-group').addEventListener('submit', function(e) {
   // Clear input
   document.getElementById('name').value = '';
   document.getElementById('surname').value = '';
+  //form.reset();
 
   console.log(createCard);
   console.log(person);
