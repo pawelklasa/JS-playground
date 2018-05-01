@@ -35,12 +35,6 @@ document.getElementById('form-group').addEventListener('submit', function(e) {
   // Show alert
   const alert = document.getElementById('success');
   alert.style.display = 'block';
-  
-  
-
-  console.log(card);
-  console.log(person);
-  console.log(person.addNames());
 
   e.preventDefault();
 });
