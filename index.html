@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -12,16 +13,28 @@
 <body>
   <!-- Nav -->
   <nav class="navbar sticky-top navbar-light bg-light">
-    <a class="navbar-brand" id="nav-release" href="#">open</a>
+    <a class="navbar-brand" id="nav-release" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <div class="float-right">
+      <i class="fab fa-github fa-lg"></i>
+      <i class="fab fa-medium-m fa-lg"></i>
+      <i class="fab fa-codepen fa-lg"></i>
+      <i class="fab fa-twitter fa-lg"></i>
+      <i class="far fa-envelope fa-lg"></i>
+    </div>
   </nav>
 
   <!-- mega nav -->
-  <div class="mega-nav animated fadeIn" id="mega-nav">
-   <div class="">Hi this is your menu</div>  
+  <div class="mega-nav animated slideInDown" id="mega-nav">
+   <div class="container meganav text-center">
+      <button type="button" class="btn btn-success">Page-01</button>
+      <button type="button" class="btn btn-success">Page-02</button>
+   </div>  
   </div>
 
   <div class="container">
-    <div class="card" id="card">
+    <div class="card main" id="card">
         <div class="alert alert-success" role="alert" id="success">
           <strong>Well done!</strong> You successfully read this important alert message.
           <button type="button" class="close" id="close">

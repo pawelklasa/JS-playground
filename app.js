@@ -67,9 +67,11 @@ navRelease.addEventListener('click', function() {
 
   if (megaNav.style.display === 'block') {
     megaNav.style.display = 'none';
-    brand.innerHTML = 'open';
+    //brand.innerHTML = 'open';
+
   } else {
     megaNav.style.display = 'block';
-    brand.innerHTML = 'close';  
+    //brand.innerHTML = 'close';  
+
   }
 })
