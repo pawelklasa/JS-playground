@@ -57,3 +57,16 @@ newElement.appendChild(document.createTextNode('Hi and something else goes here'
 const placeholder = document.getElementById('placeholder');
 placeholder.appendChild(newElement);
 
+// Mega nav toggle
+const megaNav = document.getElementById('mega-nav');
+const navRelease = document.getElementById('nav-release');
+navRelease.addEventListener('click', function() {
+
+  const brand = document.getElementById('nav-release');
+
+  if (megaNav.style.display === 'block') {
+    megaNav.style.display = 'none';
+  } else {
+    megaNav.style.display = 'block';
+  }
+})
