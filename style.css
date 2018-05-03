@@ -33,3 +33,10 @@
 .navbar {
   border-bottom: solid 1px #eee;
 }
+
+.fa-times {
+  display: none;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+}

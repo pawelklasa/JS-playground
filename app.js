@@ -64,14 +64,25 @@ const navRelease = document.getElementById('nav-release');
 navRelease.addEventListener('click', function() {
 
   const brand = document.getElementById('nav-release');
+  const x = document.getElementById('fa-times-circle');
+  const burger = document.getElementById('burger');
 
   if (megaNav.style.display === 'block') {
     megaNav.style.display = 'none';
-    //brand.innerHTML = 'open';
-
   } else {
     megaNav.style.display = 'block';
-    //brand.innerHTML = 'close';  
-
   }
+
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+
+  if (burger.style.display === 'none') {
+    burger.style.display = 'block';
+  } else {
+    burger.style.display = 'none';
+  }
+  
 })
