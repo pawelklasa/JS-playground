@@ -48,25 +48,28 @@ document.getElementById('close').addEventListener('click', function() {
 // ........................
 
 // Print date
-
 const newElement = document.createElement('card');
-newElement.className = 'card';
 
+newElement.className = 'card';
 newElement.appendChild(document.createTextNode('Hi and something else goes here'));
 
 const placeholder = document.getElementById('placeholder');
+
 placeholder.appendChild(newElement);
 
 // Mega nav toggle
 const megaNav = document.getElementById('mega-nav');
 const navRelease = document.getElementById('nav-release');
+
 navRelease.addEventListener('click', function() {
 
   const brand = document.getElementById('nav-release');
 
   if (megaNav.style.display === 'block') {
     megaNav.style.display = 'none';
+    brand.innerHTML = 'open';
   } else {
     megaNav.style.display = 'block';
+    brand.innerHTML = 'close';  
   }
 })

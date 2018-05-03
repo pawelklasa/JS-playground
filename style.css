@@ -16,6 +16,11 @@
 
 .mega-nav {
   height: 100px;
-  background-color: antiquewhite;
+  background-color: #fafafa;
+  border-bottom: solid 1px #eee;
   display: none;
+}
+
+.navbar {
+  border-bottom: solid 1px #eee;
 }
