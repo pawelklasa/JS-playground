@@ -84,5 +84,4 @@ navRelease.addEventListener('click', function() {
   } else {
     burger.style.display = 'none';
   }
-  
 })
