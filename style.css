@@ -1,16 +1,25 @@
 .container {
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: 'a b';
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+    'nav nav'
+    'a b';
 }
 
-.form {
+.area1 {
   grid-area: a;
 }
 
-.something-else {
+.area2 {
   grid-area: b;
 }
+
+.meganav {
+  grid-area: nav;
+}
+
+
 
 
 
@@ -36,7 +45,8 @@
 }
 
 .mega-nav {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   height: 100%;
   background-color: #fafafa;
   border-bottom: solid 1px #eee;
