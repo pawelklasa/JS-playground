@@ -4,15 +4,16 @@
   grid-auto-columns: 1fr;
   grid-template-areas: 
     'nav nav'
-    'a b';
+    'a a'
+    'f f';
 }
 
 .area1 {
   grid-area: a;
 }
 
-.area2 {
-  grid-area: b;
+.footer {
+  grid-area: f;
 }
 
 .meganav {
