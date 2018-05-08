@@ -47,15 +47,15 @@ document.getElementById('close').addEventListener('click', function() {
 
 // ........................
 
-// Print date
-const newElement = document.createElement('card');
+// // Print date
+// const newElement = document.createElement('card');
 
-newElement.className = 'card';
-newElement.appendChild(document.createTextNode('Hi and something else goes here'));
+// newElement.className = 'card';
+// newElement.appendChild(document.createTextNode('Hi and something else goes here'));
 
-const placeholder = document.getElementById('placeholder');
+// const placeholder = document.getElementById('placeholder');
 
-placeholder.appendChild(newElement);
+// placeholder.appendChild(newElement);
 
 // Mega nav toggle
 const megaNav = document.getElementById('mega-nav');

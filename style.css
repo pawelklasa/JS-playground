@@ -1,7 +1,18 @@
 .container {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 10px;
+  grid-template-areas: 'a b';
 }
+
+.form {
+  grid-area: a;
+}
+
+.something-else {
+  grid-area: b;
+}
+
+
 
 .main {
   margin-top: 40px;
